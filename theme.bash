@@ -5,7 +5,7 @@
 # ------------------------------------------------------------------------------
 
 # Colors
-background='#03346E'
+background='#212121'
 foreground='#FFFFFF'
 color0='#000000'
 color1='#fc0b03'
@@ -24,7 +24,7 @@ color13='#053fc5'
 color14='#06ccd7'
 color15='#a3b5b8'
 
-accent='#0972eb'
+accent='#454545'
 color_red='#f04d4d'
 color_green='#0fa7c5'
 color_yellow='#ffff00'
@@ -53,16 +53,16 @@ geany_font='0xProto Nerd Fonts'
 
 # Appearance
 gtk_font='Noto Sans 9'
-gtk_theme='Cyberpunk'
+gtk_theme='Adwaita-dark'
 icon_theme='Archcraft-Dark'
 cursor_theme='LyraP'
 
 # Openbox
-ob_theme='Mikachu'
+ob_theme='Onyx'
 ob_layout='LIMC'
 ob_font='0xProto Nerd Font'
 ob_font_size='9'
-ob_menu='menu-simple.xml'
+ob_menu='menu-glyphs.xml'
 ob_margin_t='0'
 ob_margin_b='0'
 ob_margin_r='0'

@@ -128,32 +128,28 @@ apply_terminal() {
 		### Colors configuration
 		
 		[colors.bright]
-		black = "0x1c61c2"
-		blue = "0x00ff00"
-		cyan = "0x0abdc6"
-		green = "0xd300c4"
-		magenta = "0x711c91"
-		red = "0xff0000"
-		white = "0xd7d7d5"
-		yellow = "0xf57800"
-
-		[colors.cursor]
-		cursor = "0x0abdc6"
-		text = "0x000b1e"
+		black = "0x928374"
+		blue = "0x83a598"
+		cyan = "0x8ec07c"
+		green = "0xb8bb26"
+		magenta = "0xd3869b"
+		red = "0xfb4934"
+		white = "0xebdbb2"
+		yellow = "0xfabd2f"
 
 		[colors.normal]
-		black = "0x123e7c"
-		blue = "0x123e7c"
-		cyan = "0x0abdc6"
-		green = "0xd300c4"
-		magenta = "0x711c91"
-		red = "0xff0000"
-		white = "0xd7d7d5"
-		yellow = "0xf57800"
+		black = "0x282828"
+		blue = "0x458588"
+		cyan = "0x689d6a"
+		green = "0x98971a"
+		magenta = "0xb16286"
+		red = "0xcc241d"
+		white = "0xa89984"
+		yellow = "0xd79921"
 
 		[colors.primary]
-		background = "0x000b1e"
-		foreground = "0x0abdc6"
+		background = "0x282828"
+		foreground = "0xebdbb2"
 	_EOF_
 
 	# xfce terminal : fonts & colors
