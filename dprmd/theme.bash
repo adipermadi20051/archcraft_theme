@@ -24,7 +24,7 @@ color13='#053fc5'
 color14='#06ccd7'
 color15='#a3b5b8'
 
-accent='#454545'
+accent='#706f6f'
 color_red='#f04d4d'
 color_green='#0fa7c5'
 color_yellow='#ffff00'
