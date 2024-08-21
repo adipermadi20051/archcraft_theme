@@ -52,7 +52,7 @@ geany_colors='dprmd.conf'
 geany_font='0xProto Nerd Fonts'
 
 # Appearance
-gtk_font='Noto Sans 9'
+gtk_font='Inter 9'
 gtk_theme='Adwaita-dark'
 icon_theme='Archcraft-Dark'
 cursor_theme='LyraP'
