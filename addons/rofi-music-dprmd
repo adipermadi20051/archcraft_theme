@@ -5,14 +5,16 @@
 # Import Current Theme
 DIR="$HOME/.config/openbox"
 STYLE="dprmd"
-RASI="$DIR/themes/$STYLE/rofi/music.rasi"
+RASI=""
 
 # Theme Elements
 status="`mpc status`"
 if [[ -z "$status" ]]; then
+  RASI="$DIR/themes/$STYLE/rofi/music-1.rasi"
 	prompt='Offline'
 	mesg="MPD is Offline"
 else
+  RASI="$DIR/themes/$STYLE/rofi/music-7.rasi"
 	prompt="`mpc -f "%artist%" current`"
 	mesg="`mpc -f "%title%" current` :: `mpc status | grep "#" | awk '{print $3}'`"
 fi
@@ -69,7 +71,6 @@ rofi_cmd() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-
 	if [[ -z "$status" ]]; then
 		echo -e "$option_1" | rofi_cmd
 	else
