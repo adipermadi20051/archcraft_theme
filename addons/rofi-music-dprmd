@@ -95,8 +95,18 @@ run_cmd() {
 	elif [[ "$1" == '--opt5' ]]; then
 		mpc -q next && kunst --size 60x60 --silent
 	elif [[ "$1" == '--opt6' ]]; then
+		if [[ ${status} == *"repeat: on"* ]]; then
+	  	dunstify -t 2000 "Repeat Off"
+    elif [[ ${status} == *"repeat: off"* ]]; then
+	  	dunstify -t 2000 "Repeat On"
+	  fi
 		mpc -q repeat
 	elif [[ "$1" == '--opt7' ]]; then
+		if [[ ${status} == *"random: on"* ]]; then
+	  	dunstify -t 2000 "Random Off"
+    elif [[ ${status} == *"random: off"* ]]; then
+	  	dunstify -t 2000 "Random On"
+	  fi
 		mpc -q random
 	fi
 }
