@@ -27,15 +27,15 @@ if [[ "$layout" == 'NO' ]]; then
 		else
 			option_1="󰝚 Open ncmpcpp"
 			if [[ ${status} == *"[playing]"* ]]; then
-				option_2=" Pause"
+				option_2="󰏤 Pause"
 			else
-				option_2=" Play"
+				option_2="󰐊 Play"
 			fi
-			option_3=" Stop"
-			option_4=" Previous"
-			option_5=" Next"
-			option_6=" Repeat"
-			option_7=" Random"
+			option_3=" Stop"
+			option_4="󰼨 Previous"
+			option_5="󰼧 Next"
+			option_6="󰑖 Repeat"
+			option_7=" Random"
 	fi
 fi
 
