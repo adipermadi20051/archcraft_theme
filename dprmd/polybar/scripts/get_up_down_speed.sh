@@ -1,6 +1,6 @@
 #!/bin/bash
 
-interface="wlan0"  # Ganti dengan interface kamu
+interface=$(ip route | grep default | awk '{print $5}')
 
 # Mendapatkan jumlah bytes yang diterima dan dikirim
 down=$(cat /sys/class/net/$interface/statistics/rx_bytes)

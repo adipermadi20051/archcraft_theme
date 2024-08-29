@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Ganti 'wlan0' dengan nama interface jaringan Anda
-interface="wlan0"
+interface=$(ip route | grep default | awk '{print $5}')
 
 # Mendapatkan data RX dan TX
 rx_bytes=$(cat /sys/class/net/$interface/statistics/rx_bytes)
