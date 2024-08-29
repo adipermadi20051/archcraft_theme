@@ -1,6 +1,30 @@
 #!/bin/bash
 
+# Nama file fallback untuk menyimpan nama perangkat jaringan terakhir yang digunakan
+fallback_file=".fallback_device.txt"
+
+# Mendapatkan nama perangkat jaringan yang digunakan untuk koneksi internet
 interface=$(ip route | grep default | awk '{print $5}')
+
+# Jika interface kosong, baca dari file fallback
+if [ -z "$interface" ]; then
+  # Membaca nama perangkat jaringan dari file fallback
+  if [ -f "$fallback_file" ]; then
+    interface=$(cat "$fallback_file")
+  else
+    echo "0 KB"
+    exit 1
+  fi
+else
+  # Jika interface tidak kosong, perbarui file fallback
+  echo "$interface" > "$fallback_file"
+fi
+
+# Memeriksa apakah direktori statistik untuk interface ada
+if [ ! -d "/sys/class/net/$interface/statistics" ]; then
+  echo "0 KB"
+  exit 1
+fi
 
 # Mendapatkan data RX dan TX
 rx_bytes=$(cat /sys/class/net/$interface/statistics/rx_bytes)
